@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harishan's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- MOBILE MENU -->
+<header>
+
+    <div class="mobile-menu-wrapper">
+        <div class="menu-header">
+            <div class="username">@aboutMe</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="navIcon">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="aboutme.html">
+                <i class="fa-solid fa-file"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="experience.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Experience</span>
+            </a>
+
+           
+           
+        </div>
+    </div>
+
+    <!-- TOP HEADER (Desktop Navigation) -->
+    <div class="header">
+        <div id="top-header">
+            <nav class="navbar">
+                <div class="logo"></div>
+                <ul class="nav-menu">
+                    <li><a href="#section0">About Me</a></li>
+                    <li><a href="#section12">Projects</a></li>
+                    <li><a href="#Third">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+</header>
+
+<script>
+
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+}
+
+function closeMenu() {
+    document.querySelector('.nav-menu').classList.remove('show');
+}
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+
+</script>
+
+
+
+<div class="aboutMePhone">
+
+
+    <div class="text1Phone">
+        <p>Hi, my name is Harishan Thilak, and this is my portfolio website. </p>
+
+        <p>I created this website to showcase my journey through my personal projects and other experiences. I want to stay consistent in developing and creating so I can continue to learn and improve. 
+
+        </p>
+
+        <p>The project section has projects I completed and am currently working on. I will be adding other sections as time goes on. </p>
+
+        <p>Some of my other interests include soccer, basketball, running, and video editing.  </p>
+    </div>
+
+    <!--
+    <div class="mePhone">
+        <img src="" alt="Picture of Harishan">
+    </div>
+-->
+
+</div>
+
+
+<div class="aboutMeComputer">
+
+
+    <div class="text1Computer">
+        <p>Hi, my name is Harishan Thilak, and this is my portfolio website. </p>
+
+        <p>I created this website to showcase my journey through my personal projects and other experiences. I want to stay consistent in developing and creating so I can continue to learn and improve. This summer I will be focusing on building various projects and gaining experience in the real world. I will be learning more about applying machine learning when working on my soccer analysis project. 
+
+        </p>
+
+        <p>The project section has projects I completed and am currently working on. I will be adding other sections as time goes on. </p>
+
+        <p>Some of my other interests include soccer, basketball, running, and video editing.  </p>
+    </div>
+
+    
+    <div class="meComputer">
+        <img src="beachMe.jpeg" alt="Picture of Harishan">
+    </div>
+
+
+</div>
+
+
+<div class="EducationPhone">
+    <h2>Education</h2>
+    <div class="education-container">
+        <div class="education-card">
+            <h3>University of Guelph</h3>
+            <p>Bachelor of Computing, Software Engineering</p>
+            <p>Minor in Applied Geomatics</p>
+            <span class="edu-date">(2023 - Present)</span>
+        </div>
+        <div class="education-card">
+            <h3>Milliken Mills High School</h3>
+            <p>Ontario Secondary School Diploma</p>
+            <span class="edu-date">(2019 - 2023)</span>
+        </div>
+    </div>
+</div>
+
+
+<div class="SkillsPhone">
+    <h2>Skills</h2>
+
+    <div class="skills-section">
+
+        <h3>Languages</h3>
+
+        <div class="skills-container">
+            <span class="skill">Python</span>
+            <span class="skill">C</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">Java</span>
+            <span class="skill">React</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+
+        </div>
+
+    </div>
+
+    <div class="skills-section">
+
+        <h3>Tools & Technologies</h3>
+
+        <div class="skills-container">
+            <span class="skill">Git</span>
+            <span class="skill">SQL</span>
+            <span class = "skill">MongoDB</span>
+            <span class="skill">Docker</span>
+            <span class="skill">WordPress</span>
+        </div>
+
+    </div>
+    
+
+</div>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harishan's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- MOBILE MENU -->
+<header>
+    <div class="mobile-menu-wrapper">
+        <div class="menu-header">
+            <div class="username">@experience</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="navIcon">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="aboutme.html">
+                <i class="fa-solid fa-file"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="experience.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Experience</span>
+            </a>
+
+           
+           
+        </div>
+    </div>
+
+    <!-- TOP HEADER (Desktop Navigation) -->
+    <div class="header">
+        <div id="top-header">
+            <nav class="navbar">
+                <div class="logo"></div>
+                <ul class="nav-menu">
+                    <li><a href="#section0">About Me</a></li>
+                    <li><a href="#section12">Projects</a></li>
+                    <li><a href="#Third">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+}
+
+function closeMenu() {
+    document.querySelector('.nav-menu').classList.remove('show');
+}
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+</script>
+
+
+<div class="page">
+    <h1>Experience</h1>
+
+    <div class="experience-cards">
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <span class="exp-role">Research & Data Analyst</span>
+                <span class="exp-date">Sep – Dec 2025</span>
+            </div>
+            <div class="exp-company"><strong>Ontario Ministry of Energy and Mines</strong> — Broadband Expansion & Connectivity Branch</div>
+            <span class="exp-type">Co-op</span>
+            <br>
+            <a href="https://harit10.github.io/Work-Term-Report-2/" target="_blank" class="journey-btn">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Blog
+            </a>
+            <img src="Images/ont.jpg" alt="Ontario Ministry Logo" class="company-logo" onerror="this.style.display='none'">
+        </div>
+
+        <div class="experience-card">
+            <div class="exp-header">
+                <span class="exp-role">Web Designer</span>
+                <span class="exp-date">May - Aug 2025</span>
+            </div>
+            <div class="exp-company"><strong>SACHAYS</strong></div>
+            <span class="exp-type">Summer</span>
+        </div>
+
+    </div>
+
+    
+</div>

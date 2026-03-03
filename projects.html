@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harishan's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+<!-- MOBILE MENU -->
+<header>
+    <div class="mobile-menu-wrapper">
+        <div class="menu-header">
+            <div class="username">@projects</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="index.html" class="navIcon">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="aboutme.html">
+                <i class="fa-solid fa-file"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="experience.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Experience</span>
+            </a>
+
+           
+           
+        </div>
+    </div>
+
+    <!-- TOP HEADER (Desktop Navigation) -->
+    <div class="header">
+        <div id="top-header">
+            <nav class="navbar">
+                <div class="logo"></div>
+                <ul class="nav-menu">
+                  
+                    <li><a href="#section0">About Me</a></li>
+                    <li><a href="#section12">Projects</a></li>
+                    <li><a href="#Third">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<div class="page">
+    <div class="page-header">
+        <h1>Projects</h1>
+    </div>
+
+    <div class="filter-bar">
+        <button class="filter-btn active" onclick="filterProjects('all', this)">All</button>
+        <button class="filter-btn" onclick="filterProjects('completed', this)">Completed</button>
+        <button class="filter-btn" onclick="filterProjects('wip', this)">In Progress</button>
+    </div>
+
+    <div class="projects-grid" id="projectsGrid">
+
+        <div class="project-card" data-status="wip">
+            <div class="project-img-wrap">
+                <img src="images/tracker.png" alt="Personal Finance Tracker"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="project-img-placeholder" style="display:none">💸</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Personal Finance Tracker</span>
+                    <span class="project-badge badge-wip">In Progress</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">React</span>
+                    <span class="stack-tag">Node.js</span>
+                    <span class="stack-tag">MongoDB</span>
+                    <span class="stack-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="wip">
+            <div class="project-img-wrap">
+                <div class="project-img-placeholder">⚽</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Soccer Video Analyzer</span>
+                    <span class="project-badge badge-wip">In Progress</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-tag">YOLOv5</span>
+                    <span class="stack-tag">OpenCV</span>
+                    <span class="stack-tag">React</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="wip">
+            <div class="project-img-wrap">
+                <div class="project-img-placeholder">🗺️</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Stadium Tracker (GIS)</span>
+                    <span class="project-badge badge-wip">In Progress</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-tag">ArcGIS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="completed">
+            <div class="project-img-wrap">
+                <img src="images/vcp.png" alt="VC Parser"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="project-img-placeholder" style="display:none">📇</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">VC Parser</span>
+                    <span class="project-badge badge-done">Completed</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">C</span>
+                    <span class="stack-tag">Python</span>
+                    <span class="stack-tag">SQL</span>
+                    <span class="stack-tag">Docker</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="completed">
+            <div class="project-img-wrap">
+                <img src="images/newMLS.png" alt="cMLS"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="project-img-placeholder" style="display:none">🏠</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">cMLS</span>
+                    <span class="project-badge badge-done">Completed</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">JavaScript</span>
+                    <span class="stack-tag">HTML</span>
+                    <span class="stack-tag">CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="completed">
+            <div class="project-img-wrap">
+                <img src="images/alk1.png" alt="Alka's Jewellery"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="project-img-placeholder" style="display:none">💎</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Alka's Jewellery</span>
+                    <span class="project-badge badge-done">Completed</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">JavaScript</span>
+                    <span class="stack-tag">HTML</span>
+                    <span class="stack-tag">CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="completed">
+            <div class="project-img-wrap">
+                <img src="images/chatbbot1.png" alt="Personal AI Chatbot"
+                     onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+                <div class="project-img-placeholder" style="display:none">🤖</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Personal AI Chatbot</span>
+                    <span class="project-badge badge-done">Completed</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">React</span>
+                    <span class="stack-tag">Gemini API</span>
+                    <span class="stack-tag">CSS</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card" data-status="completed">
+            <div class="project-img-wrap">
+                <div class="project-img-placeholder">💼</div>
+            </div>
+            <div class="project-body">
+                <div class="project-top">
+                    <span class="project-name">Old Portfolio</span>
+                    <span class="project-badge badge-done">Completed</span>
+                </div>
+                <div class="project-stack">
+                    <span class="stack-tag">HTML</span>
+                    <span class="stack-tag">CSS</span>
+                    <span class="stack-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+function toggleMenu() {
+    document.getElementById('navMenu').classList.toggle('show');
+}
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', () => document.getElementById('navMenu').classList.remove('show'));
+});
+
+function filterProjects(filter, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.project-card').forEach(card => {
+        card.style.display = (filter === 'all' || card.dataset.status === filter) ? '' : 'none';
+    });
+}
+
+</script>

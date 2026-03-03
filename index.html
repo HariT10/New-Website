@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harishan's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<!-- MOBILE MENU -->
+<header>
+    <div class="mobile-menu-wrapper">
+        <div class="menu-header">
+            <div class="username">@harishan</div>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+            <a href="#index.html" class="navIcon">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="aboutme.html">
+                <i class="fa-solid fa-file"></i>
+                <span>About Me</span>
+            </a>
+
+            <a href="projects.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Projects</span>
+            </a>
+
+            <a href="experience.html">
+                <i class="fa-solid fa-file"></i>
+                <span>Experience</span>
+            </a>
+
+           
+           
+        </div>
+    </div>
+
+
+   
+
+    
+    
+</header>
+
+<script>
+function toggleMenu() {
+    const menu = document.querySelector('.nav-menu');
+    menu.classList.toggle('show');
+}
+
+function closeMenu() {
+    document.querySelector('.nav-menu').classList.remove('show');
+}
+
+document.querySelectorAll('.nav-menu a').forEach(link => {
+    link.addEventListener('click', closeMenu);
+});
+</script>
+
+<!-- HERO SECTION -->
+
+<section id="section1">
+    <div class="me1">
+        <h1 class="name-heading">Harishan Thilakanathan</h1>
+        <h2 class="welcome-heading">Welcome to my Portfolio!</h2>
+        <div class="mainText">
+            <p>Hi, I'm a third-year Software Engineering major at the University of Guelph,
+               currently seeking Summer 2026 internship/co-op opportunities.</p>
+            <p>This website showcases what I have been doing recently.</p>
+            <p>Follow the Journey!</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="imageMain2">
+    <img src="Images/me.jpeg" class="profile-pic5">
+</div>
+
+<div class="contactMe">
+    <a href="https://www.linkedin.com/in/hthilaka/" target="_blank" class="linkedin-button">My LinkedIn</a>
+    <a href="https://github.com/HariT10" target="_blank" class="linkedin-button">My GitHub</a>
+</div>
+
+
+
+<!-- STOP HERE - About Me section starts next -->
