@@ -24,6 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     z-index: 1000;
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
 }
 
 .menu-header {
@@ -46,6 +47,7 @@ body {
 }
 
 .nav-menu {
+    font-family: Avenir, Montserrat, Corbel, 'URW Gothic', source-sans-pro, sans-serif;
     display: none;
     flex-direction: column;
     position: absolute;
@@ -61,6 +63,7 @@ body {
 }
 
 .nav-menu a {
+    
     padding: 12px 20px;
     color: #000;
     text-decoration: none;
