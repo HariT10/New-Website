@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Harishan's Portfolio</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -58,46 +58,159 @@
     
     
 </header>
+<!-- HERO -->
+<div class="hero-wrapper">
+    <div class="hero-text">
+        <h1 class="name-heading">Harishan Thilakanathan</h1>
+        <h2 class="welcome-heading">Software Engineering (B.Comp) @ University of Guelph</h2>
+        <div class="mainText">
+            <p>Third-year Software Engineering student with a minor in Applied Geomatics. Currently looking for S26 co-op/internships.</p>
+        </div>
+
+        <div class="contactMe">
+
+            <!-- LinkedIn with official logo -->
+            <a href="https://www.linkedin.com/in/hthilaka/" class="linkedin-button">
+
+                <img src="../Images/link.png" class="btn-icon" alt="LinkedIn">
+            
+            </a>
+
+            <!-- GitHub with official logo -->
+            <a href="https://github.com/HariT10" target="_blank" class="linkedin-button btn-github">
+                
+                <img src="../Images/git.png" class="btn-icon" alt="LinkedIn">
+
+            </a>
+
+           
+
+            <!-- View Projects 
+            <a href="projects.html" class="linkedin-button btn-projects">
+                View Projects </i>
+            </a>
+
+        -->
+
+        </div>
+    </div>
+
+    <div class="hero-image">
+        <img src="../Images/beachMe.jpeg" class="profile-pic5" alt="Harishan">
+    </div>
+</div>
+
+<!-- DIVIDER -->
+<div class="section-divider">quick facts</div>
+
+<!-- STATS -->
+<div class="stats-strip">
+   
+</div>
+
+<!-- QUICK LINKS -->
+<div class="quick-links">
+    <a href="aboutme.html" class="quick-link-card">
+ 
+        <div class="quick-link-label">
+            <span class="sub">Learn more</span>
+            About Me
+        </div>
+    </a>
+    <a href="projects.html" class="quick-link-card">
+        
+        <div class="quick-link-label">
+            <span class="sub">See what I've built</span>
+            Projects
+        </div>
+    </a>
+    <a href="experience.html" class="quick-link-card">
+
+        <div class="quick-link-label">
+            <span class="sub">Work history</span>
+            Experience
+        </div>
+    </a>
+</div>
+
+<!--Currently building-->
+
+<!-- FEATURED PROJECT -->
+<div class="featured-label">Currently working on</div>
+
+
+
+<div class = "featured-grid">
+
+
+    <div class="featured-card">
+        <div class="featured-img-wrap">
+            <img src="images/footy.png" alt="Personal Finance Tracker">
+        </div>
+        <div class="featured-info">
+            <div class="featured-title-row">
+                <span class="featured-title">FootyMap</span>
+                <span class="featured-year">2026</span>
+            </div>
+            <p class="featured-desc">Interactive map showcasing footy stadiums around North America</p>
+        </div>
+    </div>
+
+
+
+    <div class="featured-card">
+        <div class="featured-img-wrap">
+            <img src="images/expense.png" alt="VC Parser">
+        </div>
+        <div class="featured-info">
+            <div class="featured-title-row">
+                <span class="featured-title">Tracker</span>
+                <span class="featured-year">2026</span>
+            </div>
+            <p class="featured-desc"></p>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<div class="view-more-wrap">
+    <a href="projects.html" class="view-more-btn">View More Projects Here</a>
+</div>
+
+
+<div class="featured">experience working with OPS</div>
+<div class="featured">experince with seng @ uofg</div>
+<div class="featured">journey with video editing</div>
+
+
+
+
+
+
+
+
 
 <script>
 function toggleMenu() {
-    const menu = document.querySelector('.nav-menu');
-    menu.classList.toggle('show');
+    document.getElementById('navMenu').classList.toggle('show');
 }
-
-function closeMenu() {
-    document.querySelector('.nav-menu').classList.remove('show');
-}
-
 document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', closeMenu);
+    link.addEventListener('click', () => document.getElementById('navMenu').classList.remove('show'));
 });
+
 </script>
 
-<!-- HERO SECTION -->
+</body>
 
-<section id="section1">
-    <div class="me1">
-        <h1 class="name-heading">Harishan Thilakanathan</h1>
-        <h2 class="welcome-heading">Welcome to my Portfolio!</h2>
-        <div class="mainText">
-            <p>Hi, I'm a third-year Software Engineering major at the University of Guelph,
-               currently seeking Summer 2026 internship/co-op opportunities.</p>
-            <p>This website showcases what I have been doing recently.</p>
-            <p>Follow the Journey!</p>
-        </div>
-    </div>
-</section>
+</html>
 
-
-<div class="imageMain2">
-    <img src="../Images/me.jpeg" class="profile-pic5">
-</div>
-
-<div class="contactMe">
-    <a href="https://www.linkedin.com/in/hthilaka/" target="_blank" class="linkedin-button">My LinkedIn</a>
-    <a href="https://github.com/HariT10" target="_blank" class="linkedin-button">My GitHub</a>
-</div>
 
 
 
